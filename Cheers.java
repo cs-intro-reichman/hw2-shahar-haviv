@@ -10,7 +10,7 @@ public class Cheers {
                 List<String> specialCherecters = Arrays.asList("A", "E", "F", "H", "I", "L", "M", "N", "O", "R",
                                 "S", "X");
                 for (int i = 0; i < wordLength; i++) {
-                        if (specialCherecters.contains(wordArray[i])) {
+                        if (specialCherecters.contains(wordArray[i].toUpperCase())) {
                                 System.out.println("Give me an " + wordArray[i].toUpperCase() + ": " + wordArray[i].toUpperCase() + "!");
                         } else {
                                 System.out.println("Give me a  " + wordArray[i].toUpperCase() + ": " + wordArray[i].toUpperCase() + "!");
