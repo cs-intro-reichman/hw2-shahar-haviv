@@ -11,14 +11,14 @@ public class Cheers {
                                 "S", "X");
                 for (int i = 0; i < wordLength; i++) {
                         if (specialCherecters.contains(wordArray[i])) {
-                                System.out.println("Give me an " + wordArray[i] + ": " + wordArray[i] + "!");
+                                System.out.println("Give me an " + wordArray[i].toUpperCase() + ": " + wordArray[i].toUpperCase() + "!");
                         } else {
-                                System.out.println("Give me a  " + wordArray[i] + ": " + wordArray[i] + "!");
+                                System.out.println("Give me a  " + wordArray[i].toUpperCase() + ": " + wordArray[i].toUpperCase() + "!");
                         }
                 }
                 System.out.println("What does that spell?");
                 for (int i = 0; i < Integer.parseInt(args[1]); i++) {
-                        System.out.println(args[0] + "!!!");
+                        System.out.println(args[0].toUpperCase() + "!!!");
                 }
         }
 }
