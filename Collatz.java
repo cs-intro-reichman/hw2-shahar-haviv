@@ -11,6 +11,9 @@ public class Collatz {
 			}
 			System.out.println("Every one of the first " + number + " hailstone sequences reached 1.");
 		} else {
+			for (Integer i = 1; i <= number; i++) {
+				collatzRecursionQuiet(1, i, 0);
+			}
 			System.out.println("Every one of the first " + number + " hailstone sequences reached 1.");
 		}
 	}
@@ -56,11 +59,11 @@ public class Collatz {
 				number = number * 3;
 				number = number + 1;
 				cyceleNum = cyceleNum + 1;
-				collatzRecursion(0, number, cyceleNum);
+				collatzRecursionQuiet(0, number, cyceleNum);
 			} else {
 				number = number / 2;
 				cyceleNum = cyceleNum + 1;
-				collatzRecursion(0, number, cyceleNum);
+				collatzRecursionQuiet(0, number, cyceleNum);
 			}
 		} else {
 			if (number == 1) {
@@ -68,12 +71,12 @@ public class Collatz {
 			} else if (number % 2 == 0) {
 				number = number / 2;
 				cyceleNum = cyceleNum + 1;
-				collatzRecursion(initialRun, number, cyceleNum);
+				collatzRecursionQuiet(initialRun, number, cyceleNum);
 			} else {
 				number = number * 3;
 				number = number + 1;
 				cyceleNum = cyceleNum + 1;
-				collatzRecursion(initialRun, number, cyceleNum);
+				collatzRecursionQuiet(initialRun, number, cyceleNum);
 			}
 		}
 
