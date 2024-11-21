@@ -9,6 +9,7 @@ public class Collatz {
 				collatzRecursion(1, i, 0);
 				System.out.println("");
 			}
+			System.out.println("Every one of the first " + number + " hailstone sequences reached 1.");
 		} else {
 			System.out.println("Every one of the first " + number + " hailstone sequences reached 1.");
 		}
