@@ -3,7 +3,8 @@ public class Collatz {
 	public static void main(String args[]) {
 		Integer number = Integer.parseInt(args[0]);
 		String isVerbose = args[1];
-		if (isVerbose == "v") {
+
+		if (isVerbose.equals("v")) {
 			for (Integer i = 1; i <= number; i++) {
 				collatzRecursion(1, i, 0);
 				System.out.println("");
